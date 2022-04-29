@@ -4,15 +4,23 @@ public class Cube extends Figure { //куб
     }
 
     @Override
-    double square() {
+    public void information() {
+        name = "Куб";
+        super.information();
+    }
+
+    @Override
+    public double area() {
         return 6 * Math.pow(a, 2);
     }
 
-    double perimeter() {
+    @Override
+    public double perimeter() {
         return 12 * a;
     }
 
-    double volume() {
+    @Override
+    public double volume() {
         return Math.pow(a, 3);
     }
 }

@@ -5,10 +5,17 @@ public class Square extends Figure { //квадрат
     }
 
     @Override
-    double square() {
+    public void information() {
+        name = "Квадрат";
+        super.information();
+    }
+
+    @Override
+    public double area() {
         return Math.pow(a, 2);
     }
 
+    @Override
     public double perimeter() {
         return 4 * a;
     }

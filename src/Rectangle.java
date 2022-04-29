@@ -4,11 +4,18 @@ public class Rectangle extends Figure { //прямоугольник
     }
 
     @Override
-    double square() {
+    public void information() {
+        name = "Прямоугольник";
+        super.information();
+    }
+
+    @Override
+    public double area() {
         return a * b;
     }
 
-    double perimeter() {
+    @Override
+    public double perimeter() {
         return 2 * (a + b);
     }
 }

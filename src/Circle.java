@@ -1,14 +1,22 @@
 public class Circle extends Figure { //круг
+
     public Circle(double a) {
         super(a, a);
     }
 
     @Override
-    double square() {
-        return Math.PI * 2 * a;
+    public void information() {
+        name = "Круг";
+        super.information();
     }
 
-    double perimeter() {
+    @Override
+    public double area() {
+        return Math.PI * Math.pow(a, 2);
+    }
+
+    @Override
+    public double perimeter() {
         return 2 * a * Math.PI;
     }
 }

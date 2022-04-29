@@ -4,11 +4,18 @@ public class Sphere extends Figure { //шар
     }
 
     @Override
-    double square() {
+    public void information() {
+        name = "Шар";
+        super.information();
+    }
+
+    @Override
+    public double area() {
         return 4 * Math.PI * Math.pow(a, 2);
     }
 
-    double volume() {
+    @Override
+    public double volume() {
         return (4 / 3) * Math.PI * Math.pow(a, 3);
     }
 }
