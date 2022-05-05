@@ -5,9 +5,8 @@ public class Circle extends Figure { //круг
     }
 
     @Override
-    public void information() {
-        name = "Круг";
-        super.information();
+    public String information() {
+        return "Круг ";
     }
 
     @Override

@@ -4,9 +4,8 @@ public class Sphere extends Figure { //шар
     }
 
     @Override
-    public void information() {
-        name = "Шар";
-        super.information();
+    public String information() {
+        return "Шар ";
     }
 
     @Override

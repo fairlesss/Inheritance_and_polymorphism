@@ -2,7 +2,7 @@ import java.util.Random;
 
 abstract public class Figure {
     public double a, b;
-    public String name;
+    public double area;
     public double perimeter;
     public double volume;
 
@@ -11,11 +11,11 @@ abstract public class Figure {
         this.b = b;
     }
 
-    public void information() {
-        System.out.print(name);
-    }
+    public abstract String information();
 
-    public abstract double area();
+    public double area() {
+        return area;
+    }
 
     public double perimeter() {
         return perimeter;
@@ -29,25 +29,26 @@ abstract public class Figure {
         Figure figures = null;
         Random random = new Random();
         for (int i = 0; i < n; i++) {
+            double x = Math.random() * 15 + 1;
             int randomNumber = random.nextInt(6);
             switch (randomNumber) {
                 case 0:
-                    figures = new Circle(Math.random() * 10 + 1);
+                    figures = new Circle(x);
                     break;
                 case 1:
-                    figures = new Cube(Math.random() * 10 + 1);
+                    figures = new Cube(x);
                     break;
                 case 2:
-                    figures = new Rectangle(Math.random() * 10 + 1, Math.random() * 10 + 1);
+                    figures = new Rectangle(x, x);
                     break;
                 case 3:
-                    figures = new Sphere(Math.random() * 10 + 1);
+                    figures = new Sphere(x);
                     break;
                 case 4:
-                    figures = new Triangle(Math.random() * 10 + 1, Math.random() * 10 + 1, Math.random() * 10 + 1);
+                    figures = new Triangle(x, x, x);
                     break;
                 case 5:
-                    figures = new Square(Math.random() * 10 + 1);
+                    figures = new Square(x);
                     break;
             }
         }

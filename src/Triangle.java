@@ -7,15 +7,17 @@ public class Triangle extends Figure { //треугольник
     }
 
     @Override
-    public void information() {
-        name = "Треугольник";
-        super.information();
+    public String information() {
+        return "Треугольник ";
     }
 
     @Override
     public double area() {
         double pp = (a + b + c) / 2;
-        return Math.sqrt(pp * (pp - a) * (pp - b) * (pp - c));
+        if (pp > a && pp > b && pp > c) {
+            return Math.sqrt(pp * (pp - a) * (pp - b) * (pp - c));
+        }
+        return 0;
     }
 
     @Override

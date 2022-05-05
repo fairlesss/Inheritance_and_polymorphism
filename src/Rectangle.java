@@ -4,9 +4,8 @@ public class Rectangle extends Figure { //прямоугольник
     }
 
     @Override
-    public void information() {
-        name = "Прямоугольник";
-        super.information();
+    public String information() {
+        return "Прямоугольник ";
     }
 
     @Override

@@ -5,9 +5,8 @@ public class Square extends Figure { //квадрат
     }
 
     @Override
-    public void information() {
-        name = "Квадрат";
-        super.information();
+    public String information() {
+        return "Квадрат ";
     }
 
     @Override

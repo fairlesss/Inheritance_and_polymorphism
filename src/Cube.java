@@ -4,9 +4,8 @@ public class Cube extends Figure { //куб
     }
 
     @Override
-    public void information() {
-        name = "Куб";
-        super.information();
+    public String information() {
+        return "Куб ";
     }
 
     @Override
