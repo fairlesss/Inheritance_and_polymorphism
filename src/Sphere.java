@@ -1,11 +1,11 @@
-public class Sphere extends Figure { //шар
+public class Sphere extends Figure implements Volume {
     public Sphere(double a) {
         super(a, a);
     }
 
     @Override
     public String information() {
-        return "Шар ";
+        return "Шар";
     }
 
     @Override

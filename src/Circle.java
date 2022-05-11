@@ -1,4 +1,4 @@
-public class Circle extends Figure { //круг
+public class Circle extends Figure implements Perimeter {
 
     public Circle(double a) {
         super(a, a);
@@ -6,7 +6,7 @@ public class Circle extends Figure { //круг
 
     @Override
     public String information() {
-        return "Круг ";
+        return "Круг";
     }
 
     @Override

@@ -1,11 +1,11 @@
-public class Cube extends Figure { //куб
+public class Cube extends Figure implements Perimeter, Volume {
     public Cube(double a) {
         super(a, a);
     }
 
     @Override
     public String information() {
-        return "Куб ";
+        return "Куб";
     }
 
     @Override

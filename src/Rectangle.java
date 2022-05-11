@@ -1,11 +1,11 @@
-public class Rectangle extends Figure { //прямоугольник
+public class Rectangle extends Figure implements Perimeter {
     public Rectangle(double a, double b) {
         super(a, b);
     }
 
     @Override
     public String information() {
-        return "Прямоугольник ";
+        return "Прямоугольник";
     }
 
     @Override

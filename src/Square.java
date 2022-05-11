@@ -1,4 +1,4 @@
-public class Square extends Figure { //квадрат
+public class Square extends Figure implements Perimeter {
 
     public Square(double a) {
         super(a, a);
@@ -6,7 +6,7 @@ public class Square extends Figure { //квадрат
 
     @Override
     public String information() {
-        return "Квадрат ";
+        return "Квадрат";
     }
 
     @Override

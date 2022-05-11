@@ -1,4 +1,4 @@
-public class Triangle extends Figure { //треугольник
+public class Triangle extends Figure implements Perimeter {
     private double c;
 
     public Triangle(double a, double b, double c) {
@@ -8,7 +8,7 @@ public class Triangle extends Figure { //треугольник
 
     @Override
     public String information() {
-        return "Треугольник ";
+        return "Треугольник";
     }
 
     @Override
